@@ -1,4 +1,4 @@
-public enum Ingredients {
+public enum Ingredient {
     TOMATO,
     LETTUCE,
     POTATO,

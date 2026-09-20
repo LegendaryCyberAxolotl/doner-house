@@ -3,11 +3,11 @@ import java.util.Arrays;
 public class VeganDoner implements Doner {
     private static final Type DONER_TYPE = Type.VEGAN;
     private Bread bread;
-    private Ingredients[] ingredients;
+    private Ingredient[] ingredients;
     private Sauce[] sauce;
     private int price;
 
-    public VeganDoner(Bread bread, Ingredients[] ingredients, Sauce[] sauce, int price) {
+    public VeganDoner(Bread bread, Ingredient[] ingredients, Sauce[] sauce, int price) {
         this.bread = bread;
         this.ingredients = ingredients;
         this.sauce = sauce;

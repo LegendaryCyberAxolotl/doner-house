@@ -1,10 +1,10 @@
 public class KazakhChef {
     private static final Bread BREAD = Bread.LAVASH;
 
-    private static final Ingredients[] INGREDIENTS = {
-        Ingredients.TOMATO,
-        Ingredients.POTATO,
-        Ingredients.CUCUMBER
+    private static final Ingredient[] INGREDIENTS = {
+        Ingredient.TOMATO,
+        Ingredient.POTATO,
+        Ingredient.CUCUMBER
     };
 
     private static final Sauce[] SAUCE = {
@@ -12,14 +12,18 @@ public class KazakhChef {
         Sauce.MAYO,
     };
 
+    private static final int BEEF_PRICE = 2100;
+    private static final int CHICKEN_PRICE = 1950;
+    private static final int VEGAN_PRICE = 1800;
+
     public Doner cookDoner(Type type) {
         switch(type) {
             case BEEF:
-                return new BeefDoner(BREAD, INGREDIENTS, SAUCE, 2100);
+                return new BeefDoner(BREAD, INGREDIENTS, SAUCE, BEEF_PRICE);
             case CHICKEN:
-                return new ChickenDoner(BREAD, INGREDIENTS, SAUCE, 1950);
+                return new ChickenDoner(BREAD, INGREDIENTS, SAUCE, CHICKEN_PRICE);
             case VEGAN:
-                return new VeganDoner(BREAD, INGREDIENTS, SAUCE, 1800);
+                return new VeganDoner(BREAD, INGREDIENTS, SAUCE, VEGAN_PRICE);
             default:
                 throw new IllegalArgumentException("Unsupported type: " + type);
         }
