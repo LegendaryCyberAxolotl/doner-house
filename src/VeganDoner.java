@@ -13,12 +13,8 @@ public class VeganDoner implements Doner {
     }
 
     @Override
-    public void cookDoner() {
-        System.out.println("Vegan doner cooked!");
-    }
-
-    @Override
-    public void sellDoner() {
-        System.out.println("Vegan doner sold for " + price + "!");
+    public String getInfo() {
+        String info = "[Type: " + '{' + VeganDoner.DONER_TYPE + "}, Bread: " + '{' + this.bread + "}, Ingredients: " + this.ingredients + ", Sauce: " + this.sauce + ", Price: " + this.price + ']';
+        return info;
     }
 }

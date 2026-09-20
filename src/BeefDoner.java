@@ -13,12 +13,8 @@ public class BeefDoner implements Doner {
     }
 
     @Override
-    public void cookDoner() {
-        System.out.println("Beef doner cooked!");
-    }
-
-    @Override
-    public void sellDoner() {
-        System.out.println("Beef doner sold for " + price + "!");
+    public String getInfo() {
+        String info = "[Type: " + '{' + BeefDoner.DONER_TYPE + "}, Bread: " + '{' + this.bread + "}, Ingredients: " + this.ingredients + ", Sauce: " + this.sauce + ", Price: " + this.price + ']';
+        return info;
     }
 }

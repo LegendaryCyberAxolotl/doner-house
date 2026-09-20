@@ -1,4 +1,3 @@
 public interface Doner {
-    void cookDoner();
-    void sellDoner();
+    String getInfo();
 }

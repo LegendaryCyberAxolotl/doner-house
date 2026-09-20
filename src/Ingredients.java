@@ -6,5 +6,6 @@ public enum Ingredients {
     PICKLES,
     ONION,
     CARROT,
+    CUCUMBER,
     CABBAGE;
 }

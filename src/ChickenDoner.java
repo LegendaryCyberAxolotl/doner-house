@@ -13,12 +13,8 @@ public class ChickenDoner implements Doner {
     }
 
     @Override
-    public void cookDoner() {
-        System.out.println("Chicken doner cooked!");
-    }
-
-    @Override
-    public void sellDoner() {
-        System.out.println("Chicken doner sold for " + price + "!");
+    public String getInfo() {
+        String info = "[Type: " + '{' + ChickenDoner.DONER_TYPE + "}, Bread: " + '{' + this.bread + "}, Ingredients: " + this.ingredients + ", Sauce: " + this.sauce + ", Price: " + this.price + ']';
+        return info;
     }
 }
