@@ -10,6 +10,6 @@ public abstract class Fries {
     }
 
     public String getInfo() {
-        return "[Shape: " + shape + ", Cooked: " + type + ", Price: " + price + "tg]";
+        return "{Shape: " + shape + ", Cooked: " + type + ", Price: " + price + "tg}";
     }
 }

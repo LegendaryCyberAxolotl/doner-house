@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class VeganDoner implements Doner {
     private static final Type DONER_TYPE = Type.VEGAN;
     private Bread bread;
@@ -14,7 +16,7 @@ public class VeganDoner implements Doner {
 
     @Override
     public String getInfo() {
-        String info = "[Type: " + '{' + VeganDoner.DONER_TYPE + "}, Bread: " + '{' + this.bread + "}, Ingredients: " + this.ingredients + ", Sauce: " + this.sauce + ", Price: " + this.price + ']';
+        String info = "{Type: " + DONER_TYPE + ", Bread: " + bread + ", Ingredients: " + Arrays.toString(ingredients) + ", Sauce: " + Arrays.toString(sauce) + ", Price: " + price + '}';
         return info;
     }
 }

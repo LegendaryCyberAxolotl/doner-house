@@ -10,6 +10,6 @@ public abstract class Drink {
     }
 
     public String getInfo() {
-        return "[Drink: " + name + ", " + liters + "L, Price: " + price + "tg]";
+        return "{Drink: " + name + ", " + liters + "L, Price: " + price + "tg}";
     }
 }
